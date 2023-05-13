@@ -25,6 +25,15 @@ class Magaza:
         else:
             return None
 
+    def __str__(self):
+        result = ""
+        for i in self.magazalar:
+            magaza_adi = self.magazalar[i]["magaza_adi"]
+            satici_adi = self.magazalar[i]["satici_adi"]
+            satis_tutari = self.magazalar[i]["satis_tutari"]
+            result += f"{magaza_adi} - {satici_adi}: {satis_tutari:,.2f}\n"
+        return result
+
 
 def main():
     magaza = ""
