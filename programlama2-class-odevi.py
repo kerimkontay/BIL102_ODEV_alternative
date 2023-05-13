@@ -1,4 +1,4 @@
-#BİLGİSAYAR PROGRAMLAMA 2 ÖDEV: 3 - CLASS#BİLGİSAYAR PROGRAMLAMA 2 ÖDEV: 3 - CLASS
+#BİLGİSAYAR PROGRAMLAMA 2 ÖDEV: 3 - CLASS
 def main():
     magaza = ""
     while True:
