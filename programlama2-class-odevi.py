@@ -9,7 +9,21 @@ class Magaza:
         self.__satici_cinsi = satici_cinsi
         self.__satis_tutari = 0
         self.__kaydet()
+        
+    def __kaydet(self):
+        i = f"{self.__magaza_adi}-{self.__satici_adi}"
+        value = {"magaza_adi": self.__magaza_adi,
+                 "satici_adi": self.__satici_adi,
+                 "satici_cinsi": self.__satici_cinsi,
+                 "satis_tutari": self.__satis_tutari}
+        self.magazalar[i] = value
 
+    def magazaSatisTutar(self, magaza_adi, satici_adi):
+        i = f"{magaza_adi}-{satici_adi}"
+        if i in self.magazalar:
+            return self.magazalar[i]["satis_tutari"]
+        else:
+            return None
 
 
 def main():
